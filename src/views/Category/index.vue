@@ -1,18 +1,11 @@
 <template>
-  <div class="container">
-    <Swiper />
-  </div>
+  <div class="container">home</div>
 </template>
 
 <script>
-import Swiper from './components/Swiper';
-
 export default {
   data() {
     return {};
-  },
-  components: {
-    Swiper
   }
 };
 </script>
