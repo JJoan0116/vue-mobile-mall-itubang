@@ -3,6 +3,7 @@
     <Swiper />
     <Nav />
     <TopNew />
+    <Card />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Swiper from './components/Swiper';
 import Nav from './components/Nav';
 import TopNew from './components/TopNew';
+import Card from './components/Card';
 
 export default {
   data() {
@@ -18,7 +20,8 @@ export default {
   components: {
     Swiper,
     Nav,
-    TopNew
+    TopNew,
+    Card
   }
 };
 </script>
@@ -28,5 +31,6 @@ export default {
   width: 100%;
   height: 100%;
   background: rgb(239, 239, 244);
+  overflow-y: auto;
 }
 </style>

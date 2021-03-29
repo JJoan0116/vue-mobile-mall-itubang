@@ -1,29 +1,46 @@
 <template>
-  <div class="card"></div>
+  <div>
+    <div class="card" v-for="(item, index) in category" :key="index">
+      <div class="title">
+        <span>{{ item.class_name }}</span>
+      </div>
+      <div class="content">
+        <Item
+          :good="good"
+          v-for="(good, idx) in item.goods.slice(0, 4)"
+          :key="idx"
+        />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 import { GetXianhuo } from '../../../../api/home';
+import Item from '../Item';
 
 export default {
   data() {
     return {
-      info: []
+      category: []
     };
   },
+  components: {
+    Item
+  },
   created() {
-    this.getInfo();
+    this.getCategory();
   },
   methods: {
-    getInfo() {
+    getCategory() {
       GetXianhuo({
         page: 1,
         perpage: 4,
         source: 'B2BM'
       }).then((res) => {
-        // const { data } = res;
-        // this.info = data?.info || [];
-        console.log(111, res);
+        const { data } = res;
+        console.log('data.info', data.info);
+        this.category = data.info;
       });
     }
   }
@@ -32,10 +49,20 @@ export default {
 
 <style scoped>
 .card {
+  background: #fff;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  border-left: 3px solid #3089e7;
+  padding-left: 10px;
+  margin-left: 14px;
+}
+
+.content {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: #fff;
+  flex-wrap: wrap;
 }
 </style>
