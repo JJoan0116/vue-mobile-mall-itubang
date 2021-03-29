@@ -63,7 +63,7 @@ export default {
 .swiper {
   background: cornsilk;
   width: 100%;
-  height: 160px;
+  height: 2.92rem;
 }
 
 .img {

@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 .footer {
-  height: 46px;
+  height: .92rem;
   display: flex;
   align-content: center;
   position: absolute;
@@ -63,11 +63,11 @@ export default {
 }
 
 .icon {
-  width: 22px;
+  width: .44rem;
   vertical-align: middle;
 }
 
 .title {
-  font-size: 13px;
+  font-size: .26rem;
 }
 </style>

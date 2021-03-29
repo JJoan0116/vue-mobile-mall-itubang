@@ -50,19 +50,22 @@ export default {
 <style scoped>
 .card {
   background: #fff;
-  padding-top: 10px;
-  margin-bottom: 10px;
+  padding-left: 0.14rem;
+  padding-right: 0.14rem;
+  margin-bottom: .2rem;
+  overflow: hidden;
 }
 
 .title {
   border-left: 3px solid #3089e7;
-  padding-left: 10px;
-  margin-left: 14px;
+  padding-left: .2rem;
+  margin: 0.2rem 0;
 }
 
 .content {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 </style>

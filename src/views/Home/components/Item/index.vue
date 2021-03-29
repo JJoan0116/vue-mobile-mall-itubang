@@ -26,19 +26,18 @@ export default {
 
 <style scoped>
 .item {
-  padding: 10px 0 0 14px;
-  width: 186px;
-  margin-bottom: 10px;
+  width: 3.54rem;
+  margin-bottom: .2rem;
 }
 
 .img {
-  width: 186px;
-  height: 184px;
+  width: 3.54rem;
+  height: 3.52rem;
 }
 
 .imgWrap {
-  width: 186px;
-  height: 184px;
+  width: 3.54rem;
+  height: 3.52rem;
   border: 1px solid #ccc;
 }
 
@@ -50,8 +49,8 @@ export default {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  font-size: 12px;
-  height: 34px;
+  font-size: 0.24rem;
+  height: 0.68rem;
   margin: 4px 0;
 }
 
@@ -68,7 +67,7 @@ export default {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 12px;
+  font-size: 0.24rem;
   text-align: left;
 }
 
@@ -78,7 +77,7 @@ export default {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 12px;
+  font-size: 0.24rem;
   text-align: left;
 }
 </style>

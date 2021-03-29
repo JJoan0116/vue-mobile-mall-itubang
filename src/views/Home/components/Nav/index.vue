@@ -44,12 +44,12 @@ export default {
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 0;
+  padding: .12rem 0;
 }
 
 .icon {
-  width: 62px;
-  height: 62px;
-  margin-bottom: 10px;
+  width: .8rem;
+  height: .8rem;
+  margin-bottom: .2rem;
 }
 </style>

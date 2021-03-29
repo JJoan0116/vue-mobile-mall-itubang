@@ -16,20 +16,23 @@ export default {
 
 <style scoped>
 .header {
-  height: 44px;
+  height: .88rem;
   background: #1296db;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
   color: #fff;
-  font-size: 18px;
+  font-size: .36rem;
   font-weight: bold;
   text-align: center;
-  line-height: 44px;
+  line-height: .88rem;
   margin: 0;
 }
 </style>

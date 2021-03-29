@@ -11,6 +11,8 @@
 <script>
 import Footer from './components/Footer';
 import Header from './components/Header';
+import './assets/css/font-size.css';
+import './assets/css/index.css';
 
 export default {
   data() {
@@ -34,7 +36,7 @@ export default {
   width: 100%;
   display: flex;
   flex-grow: 1;
-  padding-top: 44px;
-  padding-bottom: 46px;
+  padding-top: .88rem;
+  padding-bottom: .92rem;
 }
 </style>

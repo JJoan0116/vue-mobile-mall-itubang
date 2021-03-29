@@ -58,10 +58,9 @@ export default {
 .new {
   width: 100%;
   background: #fff;
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.2rem;
 }
 
 .left {
@@ -70,7 +69,7 @@ export default {
 }
 
 .icon {
-  width: 53px;
+  width: 1.04rem;
 }
 
 .right {
@@ -78,12 +77,13 @@ export default {
 }
 
 .right p {
-  font-size: 12px;
+  font-size: 0.24rem;
   color: #8f8f94;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 2px 0;
+  padding: 0.04rem 0;
+  margin: 0.2rem 0;
 }
 
 .title {
@@ -91,7 +91,7 @@ export default {
   padding: 0 4px;
   border-radius: 3px;
   border: 1px solid #3089e7;
-  margin-right: 8px;
-  line-height: 11px;
+  margin-right: 0.08rem;
+  line-height: .32rem;
 }
 </style>

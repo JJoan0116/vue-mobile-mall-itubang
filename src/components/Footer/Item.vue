@@ -44,7 +44,7 @@ export default {
 }
 
 .title {
-  font-size: 13px;
+  font-size: .26rem;
 }
 
 .active {
