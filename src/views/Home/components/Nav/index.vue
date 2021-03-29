@@ -37,7 +37,6 @@ export default {
   align-items: center;
   justify-content: space-around;
   background: #fff;
-  margin-bottom: 10px;
 }
 
 .item {
