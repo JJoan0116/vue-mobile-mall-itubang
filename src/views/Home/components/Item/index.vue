@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="item" @click="onClickItem">
     <div class="imgWrap">
       <img :src="good.image_url" alt="" class="img" />
     </div>
@@ -20,6 +20,11 @@ export default {
     return {
       category: []
     };
+  },
+  methods: {
+    onClickItem() {
+      this.$router.push(`/detail/${this.good.id}`);
+    }
   }
 };
 </script>
@@ -27,7 +32,7 @@ export default {
 <style scoped>
 .item {
   width: 3.54rem;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
 .img {

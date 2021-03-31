@@ -4,12 +4,12 @@
     <div class="main">
       <router-view></router-view>
     </div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Header from './components/Header';
 import './assets/css/font-size.css';
 import './assets/css/index.css';
@@ -19,8 +19,8 @@ export default {
     return {};
   },
   components: {
-    Header,
-    Footer
+    Header
+    // Footer
   }
 };
 </script>

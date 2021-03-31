@@ -11,14 +11,14 @@
 <script>
 import Item from './Item';
 import home from '../../assets/svg/home.svg';
-import classification from '../../assets/svg/classification.svg';
+// import classification from '../../assets/svg/classification.svg';
 import shopCart from '../../assets/svg/shop_cart.svg';
-import user from '../../assets/svg/user.svg';
+// import user from '../../assets/svg/user.svg';
 
 import activiteHome from '../../assets/svg/active_home.svg';
-import activiteClassification from '../../assets/svg/active_classification.svg';
+// import activiteClassification from '../../assets/svg/active_classification.svg';
 import activiteShopCart from '../../assets/svg/active_shop_cart.svg';
-import activeUser from '../../assets/svg/active_user.svg';
+// import activeUser from '../../assets/svg/active_user.svg';
 
 export default {
   props: {
@@ -28,19 +28,19 @@ export default {
     return {
       bar: [
         { label: '首页', icon: home, activeIcon: activiteHome, path: '/home' },
-        {
-          label: '分类',
-          icon: classification,
-          activeIcon: activiteClassification,
-          path: '/category'
-        },
+        // {
+        //   label: '分类',
+        //   icon: classification,
+        //   activeIcon: activiteClassification,
+        //   path: '/category'
+        // },
         {
           label: '购物车',
           icon: shopCart,
           activeIcon: activiteShopCart,
           path: '/cart'
-        },
-        { label: '我的', icon: user, activeIcon: activeUser, path: '/user' }
+        }
+        // { label: '我的', icon: user, activeIcon: activeUser, path: '/user' }
       ]
     };
   },
@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 .footer {
-  height: .92rem;
+  height: 0.92rem;
   display: flex;
   align-content: center;
   position: absolute;
@@ -63,11 +63,11 @@ export default {
 }
 
 .icon {
-  width: .44rem;
+  width: 0.44rem;
   vertical-align: middle;
 }
 
 .title {
-  font-size: .26rem;
+  font-size: 0.26rem;
 }
 </style>

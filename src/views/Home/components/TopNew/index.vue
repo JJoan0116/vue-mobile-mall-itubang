@@ -40,7 +40,6 @@ export default {
     enterpriseData.append('perpage', '1');
     enterpriseData.append('page', '1');
 
-    console.log(111);
     GetNews(formData).then((res) => {
       const { data } = res;
       this.industryNew = data?.info?.list[0];

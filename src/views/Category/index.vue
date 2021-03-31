@@ -1,5 +1,5 @@
 <template>
-  <div class="container">home</div>
+  <div class="container"></div>
 </template>
 
 <script>
@@ -14,6 +14,7 @@ export default {
 .container {
   width: 100%;
   height: 100%;
-  background: plum;
+  background: rgb(239, 239, 244);
+  overflow-y: auto;
 }
 </style>

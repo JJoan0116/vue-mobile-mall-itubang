@@ -39,7 +39,6 @@ export default {
         source: 'B2BM'
       }).then((res) => {
         const { data } = res;
-        console.log('data.info', data.info);
         this.category = data.info;
       });
     }
