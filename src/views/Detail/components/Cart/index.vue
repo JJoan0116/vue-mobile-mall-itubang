@@ -27,13 +27,15 @@
         </div>
       </div>
 
-      <button class="confirm">确定</button>
+      <button class="confirm" @click="confirm">确定</button>
       <div class="close" @click="onClose">x</div>
     </div>
   </div>
 </template>
 
 <script>
+import { ADD_CART_LIST_SUCCESS } from '../../../../store/mutationType';
+
 export default {
   props: {
     info: {
@@ -43,7 +45,7 @@ export default {
   },
   data() {
     return {
-      number: 5
+      number: 1
     };
   },
   methods: {
@@ -54,10 +56,17 @@ export default {
       this.number += 1;
     },
     onReduce() {
-      if (this.number <= 5) {
-        return window.alert('最小起订量：5');
+      if (this.number <= 1) {
+        return window.alert('数量不能小于0');
       }
       this.number -= 1;
+    },
+    confirm() {
+      this.$store.commit(`cart/${ADD_CART_LIST_SUCCESS}`, {
+        item: this.info,
+        count: this.number
+      });
+      this.$emit('onClose');
     }
   }
 };
@@ -133,7 +142,7 @@ export default {
 }
 
 .nameSub {
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   padding: 2px 17px;
   border-radius: 4px;
   font-weight: 500;

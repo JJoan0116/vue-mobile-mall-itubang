@@ -1,22 +1,26 @@
 <template>
   <div class="header">
+    <slot name="left"></slot>
     <p class="title">
-      首页
+      {{ title }}
     </p>
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {};
+  props: {
+    title: {
+      type: String
+    }
   }
 };
 </script>
 
 <style scoped>
 .header {
-  height: .88rem;
+  height: 0.88rem;
   background: #1296db;
   position: absolute;
   left: 0;
@@ -29,10 +33,10 @@ export default {
 
 .title {
   color: #fff;
-  font-size: .36rem;
+  font-size: 0.36rem;
   font-weight: bold;
   text-align: center;
-  line-height: .88rem;
+  line-height: 0.88rem;
   margin: 0;
 }
 </style>
